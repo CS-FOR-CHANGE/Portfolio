@@ -3,7 +3,10 @@ import Image from "next/image";
 
 function NavItem({ link, href }) {
     return (
-        <Link href={href} className="underline-offset-[10px] hover:underline">
+        <Link
+            href={href}
+            className="underline-offset-[10px] hover:underline decoration-triton"
+        >
             {link}
         </Link>
     );
@@ -11,12 +14,13 @@ function NavItem({ link, href }) {
 
 function Navbar() {
     return (
-        <nav className="sticky top-0 text-white bg-triton  flex items-center px-10 py-5 shadow-lg z-10">
+        <nav className="absolute w-full text-white flex items-center px-10 py-5 z-10">
             <Image
                 src={`/icon-dark-1.png`}
-                width={75}
-                height={75}
+                width={60}
+                height={60}
                 alt="Triton Logo"
+                className="rounded-full"
             />
             <div className="flex font-semibold text-xl ml-auto gap-4">
                 <NavItem link="Home" href="/" />

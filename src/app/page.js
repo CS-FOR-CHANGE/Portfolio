@@ -9,18 +9,16 @@ export default function Home() {
     return (
         <main className="bg-offwhite text-sm md:text-lg overflow-x-hidden">
             <Navbar />
+            <div className="top-0 z-0 bg-black w-screen h-screen items-center justify-center align-middle flex">
+                <Image src="/hero.jpg" fill className="opacity-60" />
+                <h1 className="text-white xs:text-[8rem] lg:text-[13rem] z-20 opacity-75">EdmondsCS</h1>
+            </div>
 
-            <div className="pt-10 md:m-24 rounded-t-lg bg-white">
+            <div className="md:m-24 rounded-t-lg bg-white">
                 <Section>
-                    <Image
-                        src={"/developer-activity.png"}
-                        width={400}
-                        height={100}
-                        className="relative col-span-2"
-                    />
                     <div className="mx-5 sm:mx-20 flex flex-col gap-5 px-20">
-                        <h1 className="text-3xl">About</h1>
-                        <p className="leading-10">
+                        <h1 className="text-3xl">About Us</h1>
+                        <p className="leading-">
                             TritonCS is a vibrant club where computer
                             enthusiasts gather to explore the fascinating world
                             of Computer Science and programming. Whether you're
@@ -35,7 +33,7 @@ export default function Home() {
                         </p>
                     </div>
                 </Section>
-               
+
                 <Section>
                     <div className="mx-20">
                         <h1 className="text-3xl py-5">Scope and Objectives</h1>
@@ -72,15 +70,12 @@ export default function Home() {
                     <hr className="mx-20" />
                     <div className="flex justify-center p-10">
                         <h1 className="text-3xl">Interested in Joining?</h1>
-                        {
-                            
-                        }
+                        {}
                     </div>
                     <hr className="mx-20" />
                     <br className="" />
                 </div>
             </div>
-            
 
             <Footer />
         </main>

@@ -1,10 +1,10 @@
 import "./globals.css";
-import {poppins, inter} from "./fonts"
+import { poppins, inter } from "./fonts";
+
 export const metadata = {
     title: "EdmondsCS",
     description: "Edmonds College Computer Science Club",
 };
-
 
 export default function RootLayout({ children }) {
     return (
