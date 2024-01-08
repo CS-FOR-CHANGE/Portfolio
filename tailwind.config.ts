@@ -13,10 +13,6 @@ module.exports = {
                 offwhite: "#f2f3f4",
             },
 
-            boxShadow: {
-                lg: "0 5px 10px 0 rgba(0, 0, 0, 0.45)",
-            },
-
             keyframes: {
                 fadeInDown: {
                     "0%": {
@@ -44,10 +40,9 @@ module.exports = {
             },
 
             animation: {
-                'fade-up': 'fadeInUp 1s ease-out',
-                'fade-down': 'fadeInDown 1s ease-out',
-            }
+                "fade-up": "fadeInUp 1s ease-out",
+                "fade-down": "fadeInDown 1s ease-out",
+            },
         },
     },
-    plugins: [],
 };

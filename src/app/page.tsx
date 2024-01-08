@@ -1,15 +1,9 @@
-"use client";
-
 import Image from "next/image";
-import Footer from "./components/footer";
-import Navbar from "./components/navbar";
 import Section from "./components/section";
 
 export default function Home() {
     return (
         <main className="bg-offwhite text-sm md:text-lg overflow-x-hidden">
-            <Navbar />
-
             <div className="pt-10 md:m-24 rounded-t-lg bg-white">
                 <Section>
                     <Image
@@ -17,6 +11,7 @@ export default function Home() {
                         width={400}
                         height={100}
                         className="relative col-span-2"
+                        alt=""
                     />
                     <div className="mx-5 sm:mx-20 flex flex-col gap-5 px-20">
                         <h1 className="text-3xl">About</h1>
@@ -35,7 +30,7 @@ export default function Home() {
                         </p>
                     </div>
                 </Section>
-               
+
                 <Section>
                     <div className="mx-20">
                         <h1 className="text-3xl py-5">Scope and Objectives</h1>
@@ -65,26 +60,24 @@ export default function Home() {
                             </li>
                         </ul>
                     </div>
-                    <Image src={"/thinkers.png"} width={400} height={100} />
+                    <Image
+                        src={"/thinkers.png"}
+                        width={400}
+                        height={100}
+                        alt=""
+                    />
                 </Section>
                 <div className="bg-triton text-white">
                     <br />
                     <hr className="mx-20" />
                     <div className="flex justify-center p-10">
                         <h1 className="text-3xl">Interested in Joining?</h1>
-                        {
-                            
-                        }
+                        {}
                     </div>
                     <hr className="mx-20" />
                     <br className="" />
                 </div>
             </div>
-            
-
-            <Footer />
         </main>
     );
 }
-
-const cursorStyle = <style global jsx>{``}</style>;
