@@ -24,7 +24,12 @@ export default function Navbar() {
                     ["Contact", "/contact"],
                 ].map(([name, href]) => {
                     return (
-                        <NavLink href={href} name={name} current={pathname} />
+                        <NavLink
+                            key={name}
+                            href={href}
+                            name={name}
+                            current={pathname}
+                        />
                     );
                 })}
             </div>
@@ -36,7 +41,6 @@ function NavLink({ name, href, current }: NavLinkProps) {
     const activeClass = current === href ? "text-white" : "text-gray-400";
     return (
         <Link
-            key={name}
             href={href}
             className={`${activeClass} hover:bg-[#013f58] rounded-xl px-3 py-2`}
         >
