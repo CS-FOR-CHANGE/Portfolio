@@ -9,7 +9,6 @@ module.exports = {
         extend: {
             colors: {
                 triton: "#014f6e",
-                tritonLight: "#027aa9",
                 offwhite: "#f2f3f4",
             },
 
