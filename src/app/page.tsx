@@ -14,8 +14,8 @@ export default function Home() {
                         alt=""
                     />
                     <div className="mx-5 sm:mx-20 flex flex-col gap-5 px-20">
-                        <h1 className="text-3xl">About</h1>
-                        <p className="leading-10">
+                        <h1 className="text-3xl">About Us</h1>
+                        <p className="leading-">
                             TritonCS is a vibrant club where computer
                             enthusiasts gather to explore the fascinating world
                             of Computer Science and programming. Whether you're
