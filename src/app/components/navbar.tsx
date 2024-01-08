@@ -8,7 +8,7 @@ export default function Navbar() {
     const pathname = usePathname();
 
     return (
-        <nav className="sticky top-0 text-white bg-triton  flex items-center px-10 py-5 shadow-lg z-10">
+        <nav className="sticky top-0 text-white bg-triton flex items-center px-10 py-5 shadow-lg z-10">
             <Image
                 src={"/icon-dark-1.png"}
                 width={75}
@@ -16,7 +16,7 @@ export default function Navbar() {
                 alt="Triton Logo"
             />
 
-            <div className="flex text-md font-semibold ml-auto gap-5 justify-between">
+            <div className="flex text-md font-semibold ml-auto gap-2">
                 {[
                     ["Home", "/"],
                     ["Tools", "/tools"],
@@ -33,9 +33,13 @@ export default function Navbar() {
 }
 
 function NavLink({ name, href, current }: NavLinkProps) {
-    const styles = current === href ? "text-white" : "text-gray-300";
+    const activeClass = current === href ? "text-white" : "text-gray-400";
     return (
-        <Link href={href} className={styles}>
+        <Link
+            key={name}
+            href={href}
+            className={`${activeClass} hover:bg-[#013f58] rounded-xl px-3 py-2`}
+        >
             {name}
         </Link>
     );
