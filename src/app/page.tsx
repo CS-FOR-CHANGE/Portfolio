@@ -3,10 +3,9 @@ import Section from "./components/section";
 
 export default function Home() {
     return (
-        <main className="bg-offwhite text-black text-sm md:text-lg overflow-x-hidden">
-            <Image alt="hero" src={"/hero.jpg"} width={1000} height={1000} />
-
-            <div className="container pt-10 mx-auto rounded-t-lg bg-white">
+        <main className="bg-offwhite text-black text-sm md:text-lg">
+            <div className="relative aspect-video bg-[url('/hero.jpg')] bg-center bg-black bg-contain bg-no-repeat" />
+            <div className="pt-10 rounded-t-lg bg-white mx-auto">
                 <Section>
                     <Image
                         src={"/developer-activity.png"}
