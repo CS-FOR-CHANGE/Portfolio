@@ -3,16 +3,30 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
     const pathname = usePathname();
+    const [applyScrolledStyle, setScrollStyle] = useState(false);
+
+    function updateNavStyle() {
+        setScrollStyle(window.scrollY > 200);
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", updateNavStyle);
+        return () => window.addEventListener("scroll", updateNavStyle);
+    }, []);
 
     return (
-        <nav className="sticky top-0 text-white bg-triton flex items-center px-10 py-5 shadow-lg z-10">
+        <nav
+            className={`sticky top-0 text-white flex items-center px-10 py-5 z-10 
+            ${applyScrolledStyle ? "bg-triton" : "bg-transparent"}`}
+        >
             <Image
-                src={"/icon-dark-1.png"}
-                width={75}
-                height={75}
+                src={"/favicon.png"}
+                width={60}
+                height={60}
                 alt="Triton Logo"
             />
 
@@ -28,7 +42,8 @@ export default function Navbar() {
                             key={name}
                             href={href}
                             name={name}
-                            current={pathname}
+                            currentPath={pathname}
+                            scrolled={applyScrolledStyle}
                         />
                     );
                 })}
@@ -37,12 +52,15 @@ export default function Navbar() {
     );
 }
 
-function NavLink({ name, href, current }: NavLinkProps) {
-    const activeClass = current === href ? "text-white" : "text-gray-400";
+function NavLink({ name, href, currentPath, scrolled }: NavLinkProps) {
+    const activeStyle = currentPath === href ? "text-white" : "text-gray-400";
+    const hoverStyle = `${
+        scrolled ? "hover:bg-[#013f58]" : "hover:bg-slate-600"
+    }`;
     return (
         <Link
             href={href}
-            className={`${activeClass} hover:bg-[#013f58] rounded-xl px-3 py-2`}
+            className={`${activeStyle} ${hoverStyle} rounded-xl px-3 py-2`}
         >
             {name}
         </Link>
@@ -52,5 +70,7 @@ function NavLink({ name, href, current }: NavLinkProps) {
 interface NavLinkProps {
     name: string;
     href: string;
-    current: string;
+    currentPath: string;
+    scrolled: boolean;
+    children?: React.ReactNode;
 }
