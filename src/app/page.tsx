@@ -4,7 +4,7 @@ import Section from "./components/section";
 export default function Home() {
     return (
         <main className="bg-offwhite text-black text-sm md:text-lg">
-            <div className="relative aspect-video bg-[url('/hero.jpg')] bg-center bg-black bg-contain bg-no-repeat" />
+            <div className="aspect-video bg-[url('/hero.jpg')] bg-center bg-black bg-contain bg-no-repeat" />
             <div className="pt-10 rounded-t-lg bg-white mx-auto">
                 <Section>
                     <Image
