@@ -4,7 +4,33 @@ import Section from "./components/section";
 export default function Home() {
     return (
         <main className="bg-offwhite text-black text-sm md:text-lg">
-            <div className="aspect-video bg-[url('/hero.jpg')] bg-center bg-black bg-contain bg-no-repeat" />
+            <div className="aspect-video bg-[url('./hero.jpg')] bg-center bg-cover bg-no-repeat items-center flex">
+                <div className="container mx-auto px-20 h-2/5 grid grid-cols-2 grid-rows-4 gap-3 text-white ">
+                    <h1 className="text-8xl font-semibold">TritonsCS</h1>
+                    <p className="text-xl row-span-2 col-start-1 row-start-2 text-pretty pt-5 pl-5">
+                        Whether you're a seasoned developer or just starting
+                        your coding journey, we're here to help. Our goal is to
+                        foster a welcoming community that's all about supporting
+                        one another on the road to success in the digital age.
+                        Join us to learn, share, and grow your tech skills!
+                        <br />
+                        <button
+                            type="button"
+                            className="font-semibold bg-[#F9A826] px-5 py-3 mt-10 rounded-full w-1/4 h-1/3 mt-3"
+                        >
+                            Join Now
+                        </button>
+                    </p>
+
+                    <div className="col-span-1 row-span-4 col-start-2 row-start-1 container flex justify-center">
+                        <img
+                            src="coding_pair.svg"
+                            alt=""
+                            className=" aspect-square w-3/5 row-start-1"
+                        />
+                    </div>
+                </div>
+            </div>
             <div className="pt-10 rounded-t-lg bg-white mx-auto">
                 <Section>
                     <Image
@@ -19,15 +45,10 @@ export default function Home() {
                         <p className="leading-">
                             TritonCS is a vibrant club where computer
                             enthusiasts gather to explore the fascinating world
-                            of Computer Science and programming. Whether you're
-                            a seasoned developer or just starting your coding
-                            journey, we're here to help. Join us to learn,
-                            share, and grow your tech skills. Together, we'll
+                            of Computer Science and programming. Together, we'll
                             tackle exciting projects, discover industry-grade
-                            technologies, and foster a welcoming community
-                            that's all about supporting one another on the road
-                            to success in the digital age. Come be a part of
-                            EdmondsCS and unlock your full potential.
+                            technologies, and . Come be a part of EdmondsCS and
+                            unlock your full potential.
                         </p>
                     </div>
                 </Section>

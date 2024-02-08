@@ -10,7 +10,7 @@ export default function Navbar() {
     const [applyScrolledStyle, setScrollStyle] = useState(false);
 
     function updateNavStyle() {
-        setScrollStyle(window.scrollY > 200);
+        setScrollStyle(window.scrollY > 0);
     }
 
     useEffect(() => {
