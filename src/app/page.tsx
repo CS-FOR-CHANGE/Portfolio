@@ -4,10 +4,10 @@ import Section from "./components/section";
 export default function Home() {
     return (
         <main className="bg-offwhite text-black text-sm md:text-lg">
-            <div className="aspect-video bg-[url('./hero.jpg')] bg-center bg-cover bg-no-repeat items-center flex">
-                <div className="container mx-auto px-20 h-2/5 grid grid-cols-2 grid-rows-4 gap-3 text-white ">
+            <div className="aspect-video bg-black bg-center bg-cover bg-no-repeat items-center flex">
+                <div className="container mx-auto px-20 h-2/5 flex gap-3 text-white ">
                     <h1 className="text-8xl font-semibold">TritonsCS</h1>
-                    <p className="text-xl row-span-2 col-start-1 row-start-2 text-pretty pt-5 pl-5">
+                    <p className="text-md row-span-2 col-start-1 row-start-2 text-pretty pt-5 pl-5">
                         Whether you're a seasoned developer or just starting
                         your coding journey, we're here to help. Our goal is to
                         foster a welcoming community that's all about supporting
@@ -16,9 +16,13 @@ export default function Home() {
                         <br />
                         <button
                             type="button"
-                            className="font-semibold bg-[#F9A826] px-5 py-3 mt-10 rounded-full w-1/4 h-1/3 mt-3"
+                            className="font-semibold bg-[#F9A826] px-5 py-3 mt-3 rounded-full w-1/4 h-1/3"
                         >
-                            Join Now
+                            {
+                                <span className="flex items-center justify-center">
+                                    Join
+                                </span>
+                            }
                         </button>
                     </p>
 
