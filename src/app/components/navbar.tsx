@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed w-full text-white  flex items-center px-10 py-5 z-10 
+            className={`fixed w-full text-white flex items-center px-10 py-5 z-10 
             ${applyScrolledStyle ? "bg-triton" : "bg-transparent"}`}
         >
             <Image
