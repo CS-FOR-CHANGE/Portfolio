@@ -7,22 +7,22 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "TritonCS",
-    description: "Home page for the TritonCS Club",
+  title: "CS For Change",
+  description: "Home page for the CS For Change",
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <html lang="en">
-            <body className={inter.className}>
-                <Navbar />
-                {children}
-                <Footer />
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
