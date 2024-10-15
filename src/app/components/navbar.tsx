@@ -54,7 +54,7 @@ export default function Navbar() {
             <div className="flex text-md font-semibold ml-auto gap-2">
                 {[
                     ["Home", "/"],
-                    ["Tools", "/tools"],
+                    ["About", "/about"],
                     ["Events", "/events"],
                     ["Contact", "/contact"],
                 ].map(([name, href]) => (
