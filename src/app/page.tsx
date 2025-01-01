@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Section from "./components/section";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -14,12 +15,14 @@ export default function Home() {
             success in the digital age. Join us to learn, share, and grow your
             tech skills!
             <br />
+            <a href="https://forms.gle/QRNT34DaesvMFJUR9">
             <button
               type="button"
               className="font-semibold bg-[#F9A826] px-5 py-3 mt-3 rounded-full w-1/4 h-1/3"
             >
               {<span className="flex items-center justify-center">Join</span>}
             </button>
+            </a>
           </p>
 
           <div className="col-span-1 row-span-4 col-start-2 row-start-1 container flex justify-center">
@@ -43,7 +46,7 @@ export default function Home() {
           <div className="mx-5 sm:mx-20 flex flex-col gap-5 px-20">
             <h1 className="text-3xl">About Us</h1>
             <p className="leading-">
-              TritonCS is a vibrant club where computer enthusiasts gather to
+              CS FOR CHANGE is a vibrant club where computer enthusiasts gather to
               explore the fascinating world of Computer Science and programming.
               Together, we'll tackle exciting projects, discover industry-grade
               technologies, and . Come be a part of EdmondsCS and unlock your
@@ -91,6 +94,7 @@ export default function Home() {
           <br className="" />
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

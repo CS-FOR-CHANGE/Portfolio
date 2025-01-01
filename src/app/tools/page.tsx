@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 
-// You might want to replace these with actual icons from a library like react-icons
 const ToolIcon = () => <div className="text-4xl">🛠️</div>;
 
 const tools = [

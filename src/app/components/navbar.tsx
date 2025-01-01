@@ -57,6 +57,7 @@ export default function Navbar() {
                     ["About", "/about"],
                     ["Events", "/events"],
                     ["Contact", "/contact"],
+                    ["Projects", "/tools"]
                 ].map(([name, href]) => (
                     <NavLink
                         key={name}
