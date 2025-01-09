@@ -40,7 +40,7 @@ export default function Tools() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            Projects We&aposve Built
+            Projects We have Built
           </h1>
           <p className="text-lg text-gray-400 mb-12 max-w-2xl">
             Explore our collection of projects built to solve real-world

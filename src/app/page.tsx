@@ -57,9 +57,9 @@ export default function Home() {
             build impressive portfolios, and contribute meaningfully to the community.
             <br></br>
             <br></br>
-            Whether you&aposre a seasoned developer or just starting your coding
-            journey, we&aposre here to help. Our goal is to foster a welcoming
-            community that&aposs all about supporting one another on the road to
+            Whether you are a seasoned developer or just starting your coding
+            journey, we are here to help. Our goal is to foster a welcoming
+            community that is all about supporting one another on the road to
             success in the digital age.
           </p>
 

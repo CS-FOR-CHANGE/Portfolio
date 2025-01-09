@@ -15,7 +15,7 @@ export default function Footer() {
             >
               <h2 className="text-4xl md:text-5xl font-bold font-spaceGrotesk">Ready to Join Us?</h2>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Be part of a community that&aposs passionate about technology and making a difference.
+                Be part of a community that is passionate about technology and making a difference.
               </p>
               <motion.div
                 whileHover={{ scale: 1.05 }}
